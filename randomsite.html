@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    window.onload = function() {
+        redirectToRandomSite();
+    };
+    </script>	
+    <title>Decision Helper</title>
+
+
+    <script>
+        // List of websites to choose from
+        const websites = [
+            "https://throne.com/spoilsiren/item/af800ec7-8f93-4663-9560-804ec28cf5ca",
+            "https://throne.com/spoilsiren/item/ac642462-2427-4a1e-880d-2598890ce185",
+            "https://throne.com/spoilsiren/item/17947c53-03d0-4ea5-b37a-6edc0819458c",
+            "https://throne.com/spoilsiren/item/28d3470e-a9a4-4f94-901d-9dcf151eb5f1",
+            "https://throne.com/spoilsiren/item/2d4dd7f9-13e4-4375-80ee-931f805c0d63",
+            "https://throne.com/spoilsiren/item/fd00bb09-41f7-4e4a-b8f3-077754ced516",
+            "https://throne.com/spoilsiren/item/794cc419-aa5b-4620-ac3f-7095243bb7ca",
+            "https://throne.com/spoilsiren/item/08f86332-cdf1-4f5b-9e12-31519e88356d"
+        ];
+
+        // Function to redirect to a random website
+        function redirectToRandomSite() {
+            const randomSite = websites[Math.floor(Math.random() * websites.length)];
+            window.location.href = randomSite;
+        }
+    </script>
+</head>
+<body>
+    <h1>Hey loser!</h1>
+    <p>
+        <a href="#" onclick="redirectToRandomSite()">Decisions are boring, I'll make them for you :3</a>
+    </p>
+</body>
+</html>
